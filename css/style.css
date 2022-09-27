@@ -1,16 +1,21 @@
 /* google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Arimo:wght@500&display=swap');
-*{
+
+/* regole generali */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+/* regole del body  */
+body {
     font-family: 'Anton', sans-serif;
     background-color: rgb(243, 241, 241);
 }
-header{
+
+/* stile dell'header  */
+header {
     width: auto;
     height: 130px;
     background-color: white;
@@ -18,17 +23,20 @@ header{
     display: flex;
 }
 
-#logo{
+/* stile del logo  e titolo */
+#logo {
     width: auto;
     height: 80px;
 }
 
-#title-first{
+#title-first {
     font-size: 50px;
 
 }
 
-#over-frame{
+/* frame superiore */
+
+#over-frame {
     width: 60%;
     height: 70px;
     margin: 0 auto;
@@ -36,16 +44,121 @@ header{
     background-color: white;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
+    padding: 15px;
 
 }
 
-#container-first{
+#button-frame {
+    margin-left: 50px;
+}
+
+/* container principale */
+#container-first {
     width: 60%;
     height: 670px;
     margin: 0px auto;
     margin-top: 3px;
     background-color: white;
     border-end-end-radius: 12px;
+    padding: 15px;
+    
+}
+
+/* regole generale del bottone */
+.button {
+    background-color: rgb(109, 132, 217);
+    border-radius: 7px;
+    width: 90px;
+    height: 40px;
+    color: white;
+    font-size: 15px;
+    border-color: rgb(109, 132, 217);
+}
+
+.button-w {
+    background-color: white;
+    color: grey;
+    border-color: grey;
+}
+
+.container-task {
+    margin-left: 50px;
 
 }
 
+.task {
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+/* checkbox style  */
+.chkbox {
+    width: auto;
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    
+}
+
+.chkbox label {
+    font-size: 26px;
+    color: #4D4D4D;
+    position: absolute;
+    z-index: 10;
+    padding-left: 50px;
+    cursor: pointer;
+
+}
+
+.chkbox input {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.chkbox input:checked~.check {
+    border-color: #00ff8f;
+    box-shadow: 0px 0px 0px 15px #00ff8f inset;
+}
+
+.chkbox input:checked~.check::after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.chkbox .check {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 100px;
+    background-color: #FFF;
+    border: 2px solid #00ff8f;
+    box-shadow: 0px 0px 0px 0px #00ff8f inset;
+    transition: all 0.15s cubic-bezier(0, 1.05, 0.72, 1.07);
+
+}
+
+.chkbox .check::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 4;
+    position: absolute;
+    transform: scale(0);
+    background-size: 50%;
+    background-image: url("https://webdevtrick.com/demos/checkmark.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    transition-delay: 0.2s !important;
+    transition: all 0.25s cubic-bezier(0, 1.05, 0.72, 1.07);
+}
+
+.ciao{
+    display: inline-block;
+}
