@@ -1,0 +1,51 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arimo:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Anton', sans-serif;
+    background-color: rgb(243, 241, 241);
+}
+header{
+    width: auto;
+    height: 130px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+}
+
+#logo{
+    width: auto;
+    height: 80px;
+}
+
+#title-first{
+    font-size: 50px;
+
+}
+
+#over-frame{
+    width: 60%;
+    height: 70px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: white;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+}
+
+#container-first{
+    width: 60%;
+    height: 670px;
+    margin: 0px auto;
+    margin-top: 3px;
+    background-color: white;
+    border-end-end-radius: 12px;
+
+}
+
