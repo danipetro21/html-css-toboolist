@@ -25,6 +25,8 @@ header {
 /* margine del main */
 main{
     margin-top: 35px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 /* stile del logo  e titolo */
@@ -102,7 +104,7 @@ height: 70px;
 }
 
 .chkbox label {
-    font-size: 20px;
+    font-size: 25px;
     color: rgb(75, 75, 75);
     position: absolute;
     z-index: 10;
@@ -167,7 +169,6 @@ height: 70px;
     padding: 5px 10px;
     font-size: 20px;
     color: white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 100;
 }
 
