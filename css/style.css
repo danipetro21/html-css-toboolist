@@ -22,6 +22,10 @@ header {
     padding: 20px;
     display: flex;
 }
+/* margine del main */
+main{
+    margin-top: 35px;
+}
 
 /* stile del logo  e titolo */
 #logo {
@@ -33,36 +37,29 @@ header {
     font-size: 50px;
 
 }
+/* container principale */
+.container {
+    width: 60%;
+    height: 800px;
+    margin: 0px auto;
+    margin-top: 3px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    
+}
 
 /* frame superiore */
 
-#over-frame {
-    width: 60%;
-    height: 70px;
-    margin: 0 auto;
-    margin-top: 50px;
-    background-color: white;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    padding: 15px;
-
+.over {
+height: 70px;
 }
 
 #button-frame {
     margin-left: 50px;
 }
 
-/* container principale */
-#container-first {
-    width: 60%;
-    height: 800px;
-    margin: 0px auto;
-    margin-top: 3px;
-    background-color: white;
-    border-end-end-radius: 12px;
-    padding: 15px;
-    
-}
+
 
 /* regole generale del bottone */
 .button {
@@ -86,13 +83,7 @@ header {
     width: auto;
 
 }
-#daniele{
-    width: 280px;
-    float: left;
-}
-#petrollo{
-    width: 100px;
-}
+
 
 .task {
     font-size: 35px;
@@ -111,8 +102,8 @@ header {
 }
 
 .chkbox label {
-    font-size: 26px;
-    color: #272727;
+    font-size: 20px;
+    color: rgb(75, 75, 75);
     position: absolute;
     z-index: 10;
     padding-left: 50px;
@@ -173,7 +164,7 @@ header {
     margin-left: 350px;
     background-color: rgba(81, 0, 255, 0.435);
     border-radius: 20px;
-    padding: 10px;
+    padding: 5px 10px;
     font-size: 20px;
     color: white;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
